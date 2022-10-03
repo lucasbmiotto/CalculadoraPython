@@ -40,7 +40,9 @@ def calculo():
 	todos_valores = ""
 
 def limpar_valores():
-
+    global todos_valores
+    todos_valores = "" 
+    texto.set("")
 
 # BOTÕES
 
