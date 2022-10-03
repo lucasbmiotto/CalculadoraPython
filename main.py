@@ -29,21 +29,24 @@ frame_quadros.grid(row=2, column=0, sticky=NW)
 
 # FUNÇÕES DA CALCULADORA
 def entrada_valores(event):
-    global todos_valores
-	todos_valores = todos_valores + str(event)
-	texto.set(todos_valores)
+    global all_values
+	all_values = all_values + str(event)
+	value_text.set(all_values)
 
 def calculo():
-    global todos_valores
-	resultado = str(eval(todos_valores))
-	texto.set(resultado)
-	todos_valores = ""
+    global all_values
+	result = str(eval(all_values))
+	value_text.set(result)
+	all_values = ""
 
 def limpar_valores():
-    global todos_valores
-    todos_valores = "" 
-    texto.set("")
+    global all_values
+    all_values = "" 
+    value_text.set("")
 
+# ARMAZENAMENTO DOS CALCULOS USADOS
+all_values = "" 
+value_text = StringVar()
 # BOTÕES
 
 
