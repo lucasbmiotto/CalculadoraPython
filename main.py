@@ -27,4 +27,17 @@ frame_score.grid(row=1, column=0, sticky=NW)
 frame_quadros = Frame(janela, width=300, height=340,bg=back, pady=0, padx=0, relief="flat",)
 frame_quadros.grid(row=2, column=0, sticky=NW)
 
+# FUNÇÕES DA CALCULADORA
+def entrada_valores(event):
+    global todos_valores
+	todos_valores = todos_valores + str(event)
+	texto.set(todos_valores)
+
+def calculo():
+
+def limpar_valores(): 
+
+# BOTÕES
+
+
 janela.mainloop()
