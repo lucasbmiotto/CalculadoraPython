@@ -34,8 +34,13 @@ def entrada_valores(event):
 	texto.set(todos_valores)
 
 def calculo():
+    global todos_valores
+	resultado = str(eval(todos_valores))
+	texto.set(resultado)
+	todos_valores = ""
 
-def limpar_valores(): 
+def limpar_valores():
+
 
 # BOTÕES
 
